@@ -1,0 +1,4 @@
+tite:
+  lang: 'pt-BR'
+  engine: 'http://translate.google.com/translate_tts?tl=%{lang}&q='
+  temp: '/tmp'
