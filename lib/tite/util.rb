@@ -1,6 +1,5 @@
 module Tite
   class Util
-
     def self.save_file(content)
       file = create_file_name
       write_file file, content
@@ -13,7 +12,7 @@ module Tite
 
     def self.prepare_path
       path = "#{config.temp}/tite"
-      FileUtils.mkdir_p path unless File.exists? path
+      FileUtils.mkdir_p path unless File.exist? path
       path
     end
 

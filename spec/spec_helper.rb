@@ -14,7 +14,6 @@ require 'json_spec'
 FactoryGirl.find_definitions
 
 RSpec.configure do |config|
-
   config.color     = true
   config.tty       = true
   config.formatter = :documentation
@@ -36,6 +35,6 @@ RSpec.configure do |config|
   JsonSpec.directory = "#{root}/fixtures/json"
 
   config.before(:all) do
-    #Tite::Configuration.load_file 'spec/tite.yml'
+    # Tite::Configuration.load_file 'spec/tite.yml'
   end
 end

@@ -1,14 +1,13 @@
 require 'spec_helper'
 
 describe Tite::Client do
-
   let(:client) do
     stubs = Faraday::Adapter::Test::Stubs.new do |stub|
-      stub.get(url) { |env| [200, {}, 'ederson'] }
+      stub.get(url) { |_env| [200, {}, 'ederson'] }
     end
 
     f = Faraday.new do |builder|
-      builder.adapter :test, stubs do |stub|
+      builder.adapter :test, stubs do |_stub|
       end
     end
     f

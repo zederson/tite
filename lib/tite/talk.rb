@@ -1,6 +1,5 @@
 module Tite
   class Talk
-
     def to(text)
       content = Tite::Client.get(create_url(text)).body
       Tite::Util.save_file content
