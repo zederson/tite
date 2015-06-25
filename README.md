@@ -17,8 +17,20 @@ Or install it yourself as:
     $ gem install tite
 
 ## Usage
+```
+  path_file = Tite::Talk.new.to 'Ola ederson'
+  => "/tmp/tite/tite_1435200186_.mp3"
+```
 
-TODO: Write usage instructions here
+## Configure
+Add in your initializer
+```
+  Tite::Configuration.configure do |conf|
+    conf.config.temp = '/Users/user/Downloads'
+    conf.config.lang = 'en'
+  end
+```
+
 
 ## Contributing
 
